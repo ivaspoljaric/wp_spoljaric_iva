@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zadaća 2">
+    <meta name="author" content="Iva Špoljarić">
+    <title>Zadaća 2</title>
+</head>
+<body>
+    <h1>Vampirski dnevnici</h1>
+    <table border="1">
+        <tr>
+            <th colspan="9">Vampirski dnevnici</th>
+        </tr>
+     <tr>
+        <th>Glavni likovi</th>
+        <th>Prva sezona</th>
+        <th>Druga sezona</th>
+        <th>Treća sezona</th>
+        <th>Črtvrta sezona</th>
+        <th>Peta sezona</th>
+        <th>Šesta sezona</th>
+        <th>Sedma sezona</th>
+        <th>Osma sezona</th>
+     </tr>
+     <tr>
+        <td rowspan="2">Nina Dobrev, Ian Somerhalder i Paul Wesley</td>
+        <td>2009.g.</td>
+        <td>2010. g.</td>
+        <td>2011. g.</td>
+        <td>2012. g.</td>
+        <td>2013. g.</td>
+        <td>2014. g.</td>
+        <td>2015. g.</td>
+        <td>2016. g.</td>
+     </tr>
+     <tr>
+        <td colspan="4">22 epizode</td>
+        <td>23 epizode</td>
+        <td colspan="2">22 epizode</td>
+        <td>16 epizoda</td>
+     </tr>
+     <tr>
+        <th>Platforma prikazivanja (Republika Hrvatska)</th>
+        <td colspan="8">HBO Max</td>
+     </tr>
+    </table>
+    <h2>Obrazac</h2>
+    <br>
+    <form action="#" method="get">
+        <label for="">Unesi ime i prezime:</label>
+        <input type="text" placeholder="Unesi ime i prezime" id="Ime i prezime...">
+    <br>
+    <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass" placeholder="unesi lozinku...">
+    <br>
+    <p>Odaberi račun:</p>
+        <input type="radio" name="uloga" id="Guest">
+        <label for="Guest">Guest</label> <br>
+        <input type="radio" name="uloga" id="Admin">
+        <label for="Admin">Admin</label> <br>
+    <input type="checkbox" name="Prihvati kolačiće">
+    <label for="Prihvati kolačiće">Prihvati kolačiće</label>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br>
+     <h2>ZVUK</h2>
+    <audio controls>
+    <source src="./test-audio.ogg" type="audio/ogg">
+ </audio>
+ <h2>VIDEO</h2>
+<video width="320" height="240" controls poster="./puppy.mp4">
+  <source src="./puppy.mp4" type="video/mp4">
+</video>
+        
+</body>
+</html>
