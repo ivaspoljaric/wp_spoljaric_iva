@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolokvij 1">
+    <meta name="author" content="Iva Špoljarić">
+    <title>Moja Web Stranica</title>
+</head>
+<body>
+<h1>Dobrodošli na moju web
+stranicu </h1>  
+<p>Ovo je prvi paragraf na mojoj web stranici.</p>
+<p>Ovo je moj <strong>drugi</strong> <em>paragraf</em>.</p>
+<ul>
+    <li>prvi ispit</li>
+    <li>drugi ispit</li>
+    <li>treći ispit</li>
+    <li>četvrti ispit</li>
+</ul>
+<ol>
+    <li>prvi kolokvij</li>
+    <li>drugi kolokvij</li>
+    <li>treći kolokvij</li>
+    <li>četvrti kolokvij</li>
+</ol>
+ <img src="https://www.arazoo.pl/storage/2023/05/psy-yorki.png" alt="Pas" height="550px"> 
+ <p><a href="https://www.unisb.hr/" target="_blank">Kliknite ovdje</a></p>
+<p>Instagram stranicu Sveučilišta u Slavonskom Broda možete pronaći <a href="https://www.instagram.com/sz_unisb/" target="_blank">ovdje.</a></p>
+<table border="1">
+<tr>
+     <th colspan="6">Time table</th>
+</tr>
+<tr>
+    <th rowspan="6">Sati</th>
+    <th>Pon</th>
+    <th>Uto</th>
+    <th>Sri</th>
+    <th>Čet</th>
+    <th>Pet</th>
+</tr>
+<tr>
+    <td colspan="2">Matematika</td>
+    <td>Znanost</td>
+    <td>Matematika</td>
+    <td>Likovni</td>
+</tr>
+<tr>
+    <td>Znanost</td>
+    <td>Matematika</td>
+    <td>Znanost</td>
+    <td>Matematika</td>
+    <td>Likovni</td>
+</tr>
+<tr>
+    <th colspan="5">Pauza za ručak</th>
+</tr>
+<tr>
+    <td>Znanost</td>
+    <td>Matematika</td>
+    <td colspan="2">Znanost</td>
+    <td rowspan="2">Projekt</td>
+</tr>
+<tr>
+    <td>Znanost</td>
+    <td>Matematika</td>
+    <td>Znanost</td>
+    <td>Matematika</td>
+</tr>
+</table>
+<h3>Forme u HTML-U</h3>
+<form action="#" method="post">
+        <label for="text">Unesi korisničko ime:</label>
+        <input type="text" id="Korisničko ime" placeholder="Unesi korisničko ime..." id="Korisničko ime">
+        <br>
+        <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass" placeholder="unesi lozinku...">
+    <br>
+    <br>
+        <label for="email">Unesi email</label>
+        <input type="email" name="email" id="email" placeholder="Unestte email...">
+        <br>
+        <p>Odaberi ulogu:</p>
+        <input type="radio" name="uloga" id="Korisnik">
+        <label for="Korisnik">Korisnik</label> <br>
+        <input type="radio" name="uloga" id="Admin">
+        <label for="Admin">Admin</label> <br>
+        <input type="radio" name="uloga" id="Ostalo">
+        <label for="Ostalo">Ostalo</label>
+        <br>
+    <input type="submit" value="Pošalji">
+    <input type="reset" value="Poništi">
+    <br>
+    <h2>ZVUK</h2>
+    <audio controls>
+    <source src="./test-audio.ogg" type="audio/ogg">
+ </audio>
+ <br>
+ <h2>VIDEO</h2>
+<video width="320" height="240" controls poster="./movie.mp4">
+  <source src="./movie.mp4" type="video/mp4">
+</video>
+</body>
+</html>
