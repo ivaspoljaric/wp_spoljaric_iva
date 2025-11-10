@@ -4,4 +4,11 @@
    body {
             background-color: cornflowerblue;
         }
-  
+  #prvi {
+   color: rgb(255, 0, 0);
+  }
+  /* Pristu preko ID-a*/
+  .drugi {
+    color: blueviolet;
+  }
+  /*Pristzup preko klase*/
