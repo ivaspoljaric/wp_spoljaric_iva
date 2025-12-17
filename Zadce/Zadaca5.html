@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brzi i jednostavni recepti</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fdf6f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: cornflowerblue;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .sve-kategorije {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .kategorija {
+      width: 100%;
+    }
+
+    .kategorija h2 {
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    
+    .recept-desert {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 15px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .recept-desert img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .recept-desert .recept-opis {
+      flex: 1;
+    }
+
+    
+    .glavna-jela {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .glavna-jela .recept {
+      flex: 1; 
+      min-width: 300px; 
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .glavna-jela .recept img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .recept-opis h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .recept-desert {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .recept-desert img {
+        width: 100%;
+        height: auto;
+      }
+
+      .glavna-jela {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Brzi i jednostavni recepti</h1>
+  <p>Jela za svaki dan</p>
+</header>
+
+<main>
+  <div class="sve-kategorije">
+
+    
+    <section class="kategorija">
+      <h2>Deserti</h2>
+
+      <article class="recept recept-desert">
+        <img src="https://recipesblob.oetker.hr/assets/26815c2e7cca4214b728c1f9a4f5053b/750x910/veseli-medenjaci.webp" alt="Medenjaci">
+        <div class="recept-opis">
+          <h3>Medenjaci</h3>
+         <h3>Za pripremu vam je potrebno:</h3>
+            <ul>
+              <li>30 dag brašna (pola glatko, pola integralno)</li>
+              <li>10 dag maslaca ili margarina</li>
+              <li>2 žlice livadskog ili bagrem meda</li>
+              <li>1 jaje</li>
+              <li>5 žlica šećera</li>
+              <li>1 vanilin šećer</li>
+              <li>prstohvat soli</li>
+              <li>1/2 vrečice praška za pecivo</li>
+              <li>1 žličica cimeta</li>
+              <li>1 žlica čokolade u prahu</li>
+              <li>1 ravno puna žlica začina za medenjake</li>
+              <li>naribana korica limuna/naranče</li>
+            </ul>
+            <h3>Priprema:</h3>
+            <p>Jednostavno: prosijano brašno + prašak za pecivo + čokolada u prahu + sol + šećer + vanilin šećer + svi začini. Suhoj smjesi dodati malo omekšali maslac ili margarin u listićima (ne otapati!!), med i naribanu koricu limuna/ naranče. Dlanovima istrljajte sve skupa u mrvičastu smjesu, nek bude ravnomjerno, bez većih i manjih mrvica. Dodati jaje i sve dobro sjedinti u mekano tijesto koje se više ne lijepi za dlanove. Dok mijesite, po potrebi dodajte još malo brašna ili vode.
+zamotajte smjesu u plastičnu foliju ili stavite u vrećicu i pustite ju da odstoji u hladnjaku par sati ili preko noći.Tijesto izvadit iz frižidera, pola sata ga ostavite da se malo smekša. Ako nemate mašinu za mljevenje s nastavcima za kekse, kalupima po želji izrezujte keksiće i slažite na plitki lim/protvan od pečnice koji je pokriven papirom za pečenje. Između keksića ostavite malo razmaka da se ne slijepe pri pečenju.
+Peći na 180 stupnjeva u prethodno zagrijanoj pečnici, cca 10-12 min, ovisno o debljini keksa. Nemojte ih predugo peći, ne smiju se zapeći, radije ih izvadite makar vam se čine nedovoljno pečeni jer se vani, pri sušenju stvrdnu u predivno prhko tijesto.
+pospremite ih u limenu kutiju.
+</p>
+        </div>
+      </article>
+    </section>
+
+
+    <section class="kategorija">
+      <h2>Glavna jela</h2>
+
+      <div class="glavna-jela">
+
+        <article class="recept">
+          <img src="https://finirecepti.net.hr/wp-content/uploads/2021/01/kuhana-tjestenina-sa-sirom.jpg" alt="Tjestenina">
+          <div class="recept-opis">
+            <h3>Tjestenina sa sirom i vrhnjem</h3>
+            <h3>Za pripremu vam je potrebno:</h3>
+          <ul>
+            <li>300 g domaće tjestenine</li>
+            <li>4-5 velikih žlica svježeg sira</li>
+            <li>3 žlice vrhnja</li>
+            <li>par kapi maslinovog ulja</li>
+            <li>par listova svježeg bosiljka i peršina vegeta </li>
+            <h3>Priprema:</h3>
+            <p>Skuhajte tjesteninu, ocjedite je i u nju sjedinite sve  
+navedene sastojke pa stavite na najslabiju vatru i izmijesajte sve da se dobro poveže i da se trapist
+rastopi. I gotovo!</p>
+          </div>
+        </article>
+
+        <article class="recept">
+          <img src="https://piovariations.cdn.podravka.net/2a7e4ce6-631f-11eb-a783-0242ac120051/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1024x768-f2b21802-64bc-11eb-a115-0242ac130010.webp" alt="Pizza">
+          <div class="recept-opis">
+            <h3>Domaća pizza</h3>
+            <h3>Za pripremu vam je potrebno:</h3>
+          <h3>Tjesto:</h3>
+          <ul>
+            <li>500-600 grama glatkog brašna, 1/2 kockice svježeg kvasca ili vrećica suhog, 
+ 1/2 dcl maslinova ulja, može i maslac ili obično suncokretovo ulje, 2 dcl tople vode odnosno prema 
+ potrebi, a možete i pola mlijeko-pola voda. Pazite da voda i mlijeko nisu vrući jer se onda unište 
+ gljivice iz kvasca, 1 mala žličica soli</li>
+ </ul>
+                <h3>Nadjev</h3>
+                <ul>
+            <li>3 dcl sosa od rajčice, 250 grama šunke u ovitku, može i šunkarica, 250 grama sira tipa 
+Gauda ili Podravec, 1/2 svježe zelene paprike ili crvene, žute, 10-tak svježih šampinjona, mravinac 
+(origano) prema želji i ukusu
+</li>
+ </ul>
+      <h3>Priprema:</h3>      
+            <p>Od svih navedenih sastojaka zamijesite tijesto, tijesto ostavite da se digne na sobnoj temperaturi. 
+Kad se tijesto udvostručilo počnite s pripremom pizze, u međuvremenu upalite pećnicu da se uspije 
+ugrijati! Tepsiju namažite s malo maslinova ulja na to istresite tijesto te ga prstima razvucite do 
+kraja rubova. Tijesto premažite sosom od rajčice pa pospite malo mravinca (origana), na to naribajte 
+šunku, pa na šunku naribajte sir. Na kraju malo nasjeckane zelene svježe paprike i nasjeckane 
+šampinjone, posipajte još malo mravincem (origanom). Pizzu pecite u pećnici zagrijanoj na 220 celzijevih 
+stupnjeva između 15 i 20 minuta ovisi o jačini vaše pećnice!
+</p>
+        </article>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>
