@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. kolokvij</title>
+    <style>
+    .zastava {
+            width: 300px;
+            height: 200px;
+            display: flex;
+        }
+
+        .crna {
+            background-color: black;
+            flex: 1;
+        }
+
+        .zuta {
+            background-color: yellow;
+            flex: 1;
+        }
+
+        .crvena {
+            background-color: red;
+            flex: 1;
+        }
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            margin-top: 40px;
+        }
+        
+
+        .item {
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f2f2f2;
+        }
+        .klasa1 {
+            color: blue;
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: plum;
+        }
+
+        .klasa2 {
+            color: green;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 10px;
+            background-color: palevioletred;
+        }
+
+        .klasa3 {
+            color: orange;
+            font-style: italic;
+            background-color: aquamarine;
+        }
+
+        #id1 {
+            color: red;
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+
+        #id2 {
+            color: purple;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="zastava">
+        <div class="crna"></div>
+        <div class="zuta"></div>
+        <div class="crvena"></div>
+    </div> 
+
+    <div class="grid">
+        <div class="item">Grid 1</div>
+        <div class="item"> Grid 2</div>
+        <div class="item">Grid 3</div>
+        <div class="item">Grid 4</div>
+        <div class="item">Grid 5</div>
+        <div class="item">Grid 6</div>
+        <div class="item">Grid 7</div>
+        <div class="item">Grid 8</div>
+        <div class="item">Grid 9</div>
+        <div class="item">Grid 10</div>
+        <div class="item">Grid 11</div>
+        <div class="item">Grid 12</div>
+        <div class="item">Grid 13</div>
+        <div class="item">Grid 14</div>
+        <div class="item">Grid 15</div>
+        <div class="item">Grid16</div>
+    </div>
+    <h2>Box model</h2>
+<div class="box">Prvi dio</div>
+<div class="box">Drugi dio</div>
+<div class="box">Treći dio</div>
+<div class="box">Četvrti dio</div>
+<h2>klasa i ID</h2>
+<p class="klasa1">Paragraf s klasom 1</p>
+<p class="klasa2">Paragraf s klasom 2</p>
+<p class="klasa3">Paragraf s klasom 3</p>
+
+<p id="id1">Paragraf s ID-om 1</p>
+<p id="id2">Paragraf s ID-om 2</p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
