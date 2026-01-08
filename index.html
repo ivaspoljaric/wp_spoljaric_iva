@@ -12,8 +12,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+          [id] {
+  scroll-margin-top: 70px; 
+}
+.navbar {
+    position: fixed; /* ostaje fiksno na vrhu */
+    top: 0;
+    width: 100%;
+    z-index: 999; /* iznad ostatka sadržaja */
+}
+body {
+    padding-top: 70px; /* prilagodi visini navbar-a */
+}
+        </style>
     </head>
-    <body>
+    <body id="pocetnastranica">
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-lg-5">
@@ -21,29 +35,29 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#pocetnastranica">Početna stranica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#onama">O nama</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#zadace">Zadaće</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header-->
-        <header class="py-5">
+        <header class="py-5" id="onama">
             <div class="container px-lg-5">
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">Dobrodošli</h1>
+                        <h1 class="display-5 fw-bold">Dobrodošli!</h1>
                         <p class="fs-4"> Na kolegiju <strong>Web programiranje</strong> bavili smo se izradom i dizajnom web stranica.
                     Učili smo osnove HTML-a, CSS-a i JavaScripta te povezivanje strukture, stila i funkcionalnosti.</p>
-                    <p>Moji hobiji su mažoretkinje, šetanje s psom, druženje s prijateljima i aktivnosti koje me
+                    <p>Ime mi je Iva Špoljarić. Imam 21 godinu. Moji hobiji su mažoretkinje, šetanje s psom, druženje s prijateljima i aktivnosti koje me
                     opuštaju u slobodno vrijeme.</p>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Page Content-->
-        <section class="pt-4">
+        <section class="pt-4" id="zadace">
             <div class="container px-lg-5">
                 <!-- Page Features-->
                 <div class="row gx-lg-5">
